@@ -1,3 +1,49 @@
 h1 {
-    color: red;
+    color: green;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px;
+  }
+
+.grid-container> div:nth-child(odd){
+    background-color: green;
+    color: white;
+}
+
+.grid-item:nth-child(1):hover{
+    color: black;
+    background-color: bisque;
+
+    grid-area: 1/1/span 2/span 2;
+}
+
+.grid-item:nth-child(3):hover{
+    color: black;
+    background-color: bisque;
+
+    grid-area: 1/2/span 2/span 2;
+}
+
+.grid-item:nth-child(5):hover{
+    color: black;
+    background-color: bisque;
+}
+
+.grid-item:nth-child(7):hover{
+    color: black;
+    background-color: bisque;
+
+    grid-area: 3/1/span 2/span 2;
+}
+
+.grid-item:nth-child(9):hover{
+    color: black;
+    background-color: bisque;
+    
+    grid-area: 3/2/span 2/span 2;
+}
+
+
